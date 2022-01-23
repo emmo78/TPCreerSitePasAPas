@@ -39,6 +39,14 @@ body
     margin: auto;
 }
 
+@media all and (max-width: 1024px)
+{
+    #mainWrapper
+    {
+        width: auto;
+    }
+}
+
 section h1, footer h1, nav a
 {
     font-family: Dayrom, serif;
@@ -118,6 +126,35 @@ nav a:hover
     border-bottom: 3px solid #760001;
 }
 
+@media all and (max-width: 1024px)
+{
+    nav
+    {
+        width: auto;
+        text-align: left;
+    }
+    
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        padding-left: 4px;
+    }
+    
+    nav a
+    {
+        font-size: 1.1em;
+    }
+    
+    nav a:hover
+    {
+        border-bottom: 0;
+    }
+}
+
 /* Bannière */
 
 #banniereImageBkGr
@@ -165,6 +202,14 @@ nav a:hover
 .boutonRouge img
 {
     border: 0;
+}
+
+@media all and (max-width: 1024px)
+{
+    #banniereImageBkGr
+    {
+        display: none;
+    }
 }
 
 /* Corps */
@@ -229,6 +274,37 @@ aside
 aside img
 {
     margin-right: 5px;
+}
+
+@media all and (max-width: 1024px)
+{
+    section
+    {
+        flex-direction: column;
+    }
+
+    article, aside
+    {
+        width: auto;
+        margin-bottom: 15px;
+    }
+    
+    #flecheBulle
+    {
+        display: none;
+    }
+    
+    #photoZozor img
+    {
+        width: 110px;
+        float: right;
+        margin-left: 15px;
+    }
+    
+    aside p:last-child
+    {
+        text-align: center;
+    }
 }
 
 /* Footer */
